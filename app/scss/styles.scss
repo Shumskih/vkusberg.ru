@@ -1,0 +1,70 @@
+@import "_fonts.scss";
+@import "_meanmenu.scss";
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+li a {
+	text-decoration: none;
+	color: #fff;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+	body {
+    max-width: 100%;
+    min-width: 320px;
+		background-color: #fff;
+  }
+/*
+	ul li a {
+		display: block;
+		font-family: 'Lora', serif;
+		font-size: 14px;
+	}
+
+	.mobile-nav {
+		min-height: 42px;
+		background-color: #0c1923;
+		margin: 0;
+		padding: 0;
+		color: white;
+	}
+
+	.mobile-nav-link {
+		font-family: 'LoraItalic', serif;
+		width: 90%;
+		font-size: 18px;
+		font-weight: normal;
+		font-style: normal;
+		line-height: 20px;
+		margin: 0;
+		padding: 1em 5%;
+		border-top: 1px solid rgba(255,255,255,0.5);
+	}
+
+	.mobile-nav-subnav-link {
+		font-family: 'LoraItalic', serif;
+		color: #ccc;
+		width: 80%;
+		padding: 1em 10%;
+		border-top: 1px solid rgba(255,255,255,0.25);
+		font-size: 18px;
+	}
+*/
+
+	.header-logo {
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+
+@media (min-width: 1170px) and (max-width: 1200px) {
+	body {
+  	max-width: 1170px;
+  	background: white;
+	}
+}
