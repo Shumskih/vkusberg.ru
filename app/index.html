@@ -1,74 +1,58 @@
-<!DOCTYPE html>
-<!-- Замена шрифтов:
-
-  Lato -> Open Sans;
-  Lora -> Lora;
-  Karla -> Roboto;
-  Montserrat -> NotoSans;
--->
-<html lang="ru">
+<!doctype html>
+<html class="no-js" lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>MeanMenu Demo</title>
 
-    <title>Вегетарианские рецепты | Вкусберг.RU</title>
-    <meta name="keywords" content="Вегетарианские рецепты, вкусберг, vkusberg">
-    <meta name="description" content="Вегетарианские рецепты на сайте Вкусберг.RU | vkusberg.ru">
+<!--Styles-->
+<link rel="stylesheet" href="css/normalize.css" media="all" />
+<link rel="stylesheet" href="css/styles.css" media="all" />
 
-    <!--favicon-->
-    <link rel="icon" type="image/x-icon" href="images/favicon.png" width="25" height="20"/>
-
-    <!--fonts-->
-    <!--<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">-->
-
-    <!--styles-->
-    <link rel="stylesheet" href="css/normalize.css"/>
-    <link rel="stylesheet" href="css/styles.css"/>
-    <!-- mean menu stylesheet-->
-    <link rel="stylesheet" href="meanmenu.css" media="all" />
-
-
-    <!--[if lt IE 9]>
-  		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
+<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 </head>
-<body class="body mean-container">
-  <div class="mean-bar">
-    <nav class="nav">
-      <ul class="main-menu">
-        <li><a class="mobile-nav-link mobile-nav__active">Главная</a></li>
-        <li><a href="all-recipes.html" class="mobile-nav-link">Все рецепты</a>
-          <ul>
-            <li><a href="#" class="mobile-nav-subnav-link">Завтрак</a></li>
-            <li><a href="#" class="mobile-nav-subnav-link">Обед</a></li>
-            <li><a href="#" class="mobile-nav-subnav-link">Ужин</a></li>
-          </ul>
-        </li>
-        <li><a href="contacts.html" class="mobile-nav-link">Контакты<a></li>
-        <li><a href="submit-recipe.html" class="mobile-nav-link">Предложить рецепт<a></li>
-      </ul>
-    </nav>
+
+<body>
+
+<header>
+	<nav>
+		<ul>
+			<li><a>Главная</a></li>
+			<li><a href="recipes.html">Рецепты</a>
+        <ul>
+          <li><a href="breakfast.html">Завтрак</a></li>
+          <li><a href="lanch.html">Обед</a></li>
+          <li><a href="dinner.html">Ужин</a></li>
+        </ul>
+      </li>
+			<li><a href="contacts.html">Контакты</a></li>
+			<li><a href="submit-recipe.html" class="nav-submit-recipe">Предложить рецепт</a></li>
+		</ul>
+	</nav>
+  <div>
+    <img class="header-logo" src="images/logo.png" width="162" height="122" />
   </div>
-  <header>
-    <img class="header-logo" src="images/logo.png" width="162" height="122" alt="Вегетарианские рецепты | Вкусберг.RU"/>
-  </header>
-  <main>
-  <h1>Привет! Это - тестовый текст!</h1>
-  </main>
-  <footer>
-    <p>
-      Это футер
-    </p>
-  </footer>
+</header>
+
+<main>
+  <h1>Это главный контент страницы</h1>
+  <p>
+    Это текст параграфа
+  </p>
+</main>
+
+<footer>
+  <h2>Это футер</h2>
+</footer>
+
+
 
   <!--Scripts-->
-  <script src="js/main.js"></script>
   <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-  <script src="assets/js/plugins/jquery.meanmenu.js"></script>
-
+  <script src="js/jquery.meanmenu.js"></script>
+  <script src="js/main.js"></script>
 </body>
-
-
-
 </html>

@@ -175,8 +175,8 @@ a.meanmenu-reveal {
   width: 100%;
   position: relative;
   background: #0c1923;
-  padding: 4px 0;
-  min-height: 42px;
+  padding: 0;
+  min-height: 48px;
   z-index: 999999; }
 
 .mean-container a.meanmenu-reveal {
@@ -194,8 +194,8 @@ a.meanmenu-reveal {
   line-height: 22px;
   font-size: 1px;
   display: block;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 700; }
+  font-family: 'LoraBoldItalic', serif;
+  font-weight: normal; }
 
 .mean-container a.meanmenu-reveal span {
   display: block;
@@ -231,7 +231,9 @@ a.meanmenu-reveal {
   border-top: 1px solid #383838;
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   text-decoration: none;
-  text-transform: uppercase; }
+  text-transform: none;
+  font-family: 'LoraItalic', serif;
+  font-size: 18px; }
 
 .mean-container .mean-nav ul li li a {
   width: 80%;
@@ -266,8 +268,8 @@ a.meanmenu-reveal {
 .mean-container .mean-nav ul li a.mean-expand {
   margin-top: 1px;
   width: 26px;
-  height: 32px;
-  padding: 12px !important;
+  height: 31px;
+  padding: 16px !important;
   text-align: center;
   position: absolute;
   right: 0;
@@ -303,57 +305,48 @@ a.meanmenu-reveal {
 .mean-remove {
   display: none !important; }
 
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0; }
+html {
+  -webkit-text-size-adjust: none;
+  -webkit-font-smoothing: aliased; }
 
-li a {
-  text-decoration: none;
-  color: #fff; }
-
-@media (min-width: 320px) and (max-width: 768px) {
+@media (max-width: 768px) {
   body {
+    background-color: #fff;
     max-width: 100%;
     min-width: 320px;
-    background-color: #fff; }
-  /*
-	ul li a {
-		display: block;
-		font-family: 'Lora', serif;
-		font-size: 14px;
-	}
-
-	.mobile-nav {
-		min-height: 42px;
-		background-color: #0c1923;
-		margin: 0;
-		padding: 0;
-		color: white;
-	}
-
-	.mobile-nav-link {
-		font-family: 'LoraItalic', serif;
-		width: 90%;
-		font-size: 18px;
-		font-weight: normal;
-		font-style: normal;
-		line-height: 20px;
-		margin: 0;
-		padding: 1em 5%;
-		border-top: 1px solid rgba(255,255,255,0.5);
-	}
-
-	.mobile-nav-subnav-link {
-		font-family: 'LoraItalic', serif;
-		color: #ccc;
-		width: 80%;
-		padding: 1em 10%;
-		border-top: 1px solid rgba(255,255,255,0.25);
-		font-size: 18px;
-	}
-*/
+    margin: 0;
+    padding: 0;
+    font: 16px/1.5 "LoraRegular", serif;
+    font-weight: normal;
+    font-style: normal; }
+  header nav {
+    text-align: center;
+    background: #efefef; }
+  header nav ul {
+    margin: 0;
+    padding: 1em;
+    list-style-type: none; }
+  header nav ul li {
+    display: inline;
+    margin-left: 1em; }
+  header nav ul li:first-child {
+    margin-left: 0; }
+  header nav ul li ul {
+    display: none; }
+  a {
+    color: #f77564; }
+  a:hover {
+    color: #333; }
+  a, a:hover {
+    -o-transition: color 0.25s ease-in;
+    -webkit-transition: color 0.25s ease-in;
+    -moz-transition: color 0.25s ease-in;
+    transition: color 0.25s ease-in; }
+  .nav-submit-recipe {
+    background: #6ebe3b; }
   .header-logo {
+    position: relative;
+    top: 20px;
     display: block;
     margin: 0 auto; } }
 
