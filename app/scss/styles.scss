@@ -1,5 +1,7 @@
+@import "normalize.scss";
 @import "_fonts.scss";
 @import "_meanmenu.scss";
+@import "font-awesome.scss";
 
 
 html {
@@ -7,6 +9,20 @@ html {
   -webkit-font-smoothing: aliased;
 }
 
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* Screens less 768px*/
+/*=============================================*/
 @media (max-width: 768px) {
 	body {
 		background-color: #fff;
@@ -61,6 +77,49 @@ html {
 		display: block;
 		margin: 0 auto;
 	}
+
+  .header-logo:hover {
+		opacity: 0.8;
+    transition: 0.2s all ease-in-out;
+	}
+}
+
+.header-social-reg-log {
+  text-align: center;
+}
+
+.header-social-networks,
+.header-reg-log-block,
+.header-social-networks-list li,
+.header-reg-log-block-list li {
+  display: inline-block;
+  margin-top: 40px;
+}
+
+.header-social-networks-list li {
+  margin-right: 5px;
+  font-size: 25px;
+
+    a {
+      color: #000;
+
+        &:hover {
+          color: #6EBE3B;
+        }
+    }
+}
+
+.header-reg-log-block-list li {
+  margin-right: 5px;
+  font-size: 25px;
+
+    a {
+      color: #000;
+
+        &:hover {
+          color: #6EBE3B;
+        }
+    }
 }
 
 
